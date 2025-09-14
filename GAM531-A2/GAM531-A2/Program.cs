@@ -35,15 +35,17 @@ class Program {
         Vector4 point = new Vector4(1, 0, 0, 1); // apply to a point
         Vector4 result = point * transform; // combining transformation to point
 
+        Console.WriteLine($"-Matrix Operations-");
         Console.WriteLine($"Original Point: {point}");
         Console.WriteLine("Transformed Point: " + result);
 
-        // Quaternion
+        // Quaternion (was not listed in the assignment 2 but was listed to do in the "#D Math Fundamentals pdf)
         Quaternion q = Quaternion.FromAxisAngle(Vector3.UnitY, MathHelper.DegreesToRadians(90f)); // Quaternion 90 degree rotation from Y-Axis
 
         Vector3 qPoint = new Vector3(1, 0, 0); // vector to rotate
         Vector3 rotated = Vector3.Transform(qPoint, q); // quaternion rotation to vector
-        
+
+        Console.WriteLine($"-Quaternion-");
         Console.WriteLine($"Original Point: {qPoint}");
         Console.WriteLine($"Rotated Point: {rotated}");
 
