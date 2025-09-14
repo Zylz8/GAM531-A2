@@ -39,7 +39,7 @@ class Program {
         Console.WriteLine($"Original Point: {point}");
         Console.WriteLine("Transformed Point: " + result);
 
-        // Quaternion (was not listed in the assignment 2 but was listed to do in the "#D Math Fundamentals pdf)
+        // Quaternion (was not listed in the assignment 2 but was listed to do in the "3D Math Fundamentals pdf)
         Quaternion q = Quaternion.FromAxisAngle(Vector3.UnitY, MathHelper.DegreesToRadians(90f)); // Quaternion 90 degree rotation from Y-Axis
 
         Vector3 qPoint = new Vector3(1, 0, 0); // vector to rotate
@@ -51,4 +51,5 @@ class Program {
 
 
     }
+
 }
