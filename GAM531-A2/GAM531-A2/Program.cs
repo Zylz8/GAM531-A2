@@ -11,11 +11,11 @@ class Program {
         float dot = Vector3.Dot(vector1, vector2); // dot product
         Vector3 cross = Vector3.Cross(vector1, vector2); // cross product
 
-        Vector3 add = vector1 + vector2;
-        Vector3 subtract = vector1 - vector2;
+        Vector3 add = vector1 + vector2; // addition
+        Vector3 subtract = vector1 - vector2; // subtraction
 
         // Normalize the vectors
-        Vector3 normalizedV1 = vector1.Normalized();
+        Vector3 normalizedV1 = vector1.Normalized(); 
         Vector3 normalizedV2 = vector2.Normalized();
 
         Console.WriteLine("-Vector Operations-");
