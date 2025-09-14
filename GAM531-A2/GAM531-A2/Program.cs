@@ -11,6 +11,9 @@ class Program {
         float dot = Vector3.Dot(vector1, vector2); // dot product
         Vector3 cross = Vector3.Cross(vector1, vector2); // cross product
 
+        Vector3 add = vector1 + vector2;
+        Vector3 subtract = vector1 - vector2;
+
         // Normalize the vectors
         Vector3 normalizedV1 = vector1.Normalized();
         Vector3 normalizedV2 = vector2.Normalized();
@@ -21,6 +24,8 @@ class Program {
         Console.WriteLine($"Cross Product: {cross}");
         Console.WriteLine($"Vector1 Normalized: {normalizedV1}");
         Console.WriteLine($"Vector2 Normalized: {normalizedV2}");
+        Console.WriteLine($"Vector1 + Vector2: {add}");
+        Console.WriteLine($"Vector1 - Vector2: {subtract}");
 
         // Matrix Transformation
         Matrix4 scale = Matrix4.CreateScale(2f); // scale matrix
