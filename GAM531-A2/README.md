@@ -1,5 +1,9 @@
 # GAM531-A2
 
+1. Creates two vectors -> compute dot, cross, normalize.
+2. Creates a matrix -> apply scaling, rotation, translation to a point.
+3. Creates a quaternion -> applys rotation to a vector
+
 The Library Used was OpenTK. (OpenTK.Mathematics - allows use of Vector3, Vector4, Matrix4, Quaternion, MathHelper) 
 The project implements vector, matrix, and quaternion operations in C#.
 - Addition
@@ -11,7 +15,8 @@ The project implements vector, matrix, and quaternion operations in C#.
 - Multiplication
 
 Example Output:
-<img width="553" height="290" alt="image" src="https://github.com/user-attachments/assets/78665087-7438-4291-be6a-6bec448f571e" />
+<img width="591" height="338" alt="image" src="https://github.com/user-attachments/assets/4e255dcc-f4aa-4cde-8348-c22727fb05e9" />
+
 
 
 # How to Run the Project
