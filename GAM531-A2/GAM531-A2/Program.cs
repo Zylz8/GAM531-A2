@@ -28,6 +28,7 @@ class Program {
         Console.WriteLine($"Vector1 - Vector2: {subtract}");
 
         // Matrix Transformation
+        Matrix4 identity = Matrix4.Identity; // matrix 4x4
         Matrix4 scale = Matrix4.CreateScale(2f); // scale matrix
         Matrix4 rotation = Matrix4.CreateRotationX(MathHelper.DegreesToRadians(45f)); // rotation matrix around X-axis by 45 degrees
         Matrix4 translation = Matrix4.CreateTranslation(5f, 0f, 0f); // translation matrix to move alond X-axis by 5 units
@@ -36,10 +37,11 @@ class Program {
         Vector4 result = point * transform; // combining transformation to point
 
         Console.WriteLine($"-Matrix Operations-");
+        Console.WriteLine($"Identity: {identity}");
         Console.WriteLine($"Original Point: {point}");
         Console.WriteLine("Transformed Point: " + result);
 
-        // Quaternion (was not listed in the assignment 2 but was listed to do in the "3D Math Fundamentals pdf)
+        // Quaternion (was not listed in the assignment 2 but was listed to do in the "#D Math Fundamentals pdf)
         Quaternion q = Quaternion.FromAxisAngle(Vector3.UnitY, MathHelper.DegreesToRadians(90f)); // Quaternion 90 degree rotation from Y-Axis
 
         Vector3 qPoint = new Vector3(1, 0, 0); // vector to rotate
@@ -51,5 +53,4 @@ class Program {
 
 
     }
-
 }
