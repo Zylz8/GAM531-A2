@@ -16,7 +16,8 @@ The project implements vector, matrix, and quaternion operations in C#.
 - Identity
 
 Example Output:
-<img width="655" height="394" alt="image" src="https://github.com/user-attachments/assets/6799314f-05c7-4899-9e97-26c4aa2072bf" />
+<img width="650" height="458" alt="image" src="https://github.com/user-attachments/assets/4d087b44-0333-4d06-84ab-79d06aeb4c1c" />
+
 
 
 
